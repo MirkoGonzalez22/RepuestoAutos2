@@ -37,15 +37,15 @@
 
   <div class="wrapper">
     <div class="card">
-        <form action="#" class="d-flex flex-column">
+        <form action="validar.php" method="post" class="d-flex flex-column">
             <div class="h3 text-center text-white">Login</div>
             <div class="d-flex align-items-center input-field my-3 mb-4">
                 <span class="far fa-user p-2"></span>
-                <input type="text" placeholder="Username or Email" required class="form-control">
+                <input type="text" placeholder="Usuario" name="usuario" required class="form-control">
             </div>
             <div class="d-flex align-items-center input-field mb-4">
                 <span class="fas fa-lock p-2"></span>
-                <input type="password" placeholder="Password" required class="form-control" id="pwd">
+                <input type="password" placeholder="Contraseña" name="password" required class="form-control" id="pwd">
                 <button class="btn" onclick="showPassword()">
                     <span class="fas fa-eye-slash"></span>
                 </button>
@@ -61,7 +61,7 @@
                 <div class="mt-sm-0 mt-3"><a href="#">Forgot password?</a></div>
             </div>
             <div class="my-3">
-                <input type="submit" value="Login" class="btn btn-primary">
+                <input type="submit" value="ingresar" class="btn btn-primary">
             </div>
             <div class="mb-3">
                 <span class="text-light-white">Don't have an account?</span>
@@ -86,7 +86,6 @@
         </div>
     </div>
 </div>
-
 
 
 
